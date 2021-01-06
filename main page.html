@@ -17,32 +17,32 @@
         }
     </script>
     <!-- //for-mobile-apps -->
-    <link href="~/Index/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="Index/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
-    <link rel="stylesheet" href="~/Index/css/jquery-ui.css" />
-    <link rel="stylesheet" href="~/Index/css/lightbox.css" type="text/css" media="all" />
-    <link href="~/Index/css/style.css" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="~/css/TextStyle.css">
-    <link rel="stylesheet" type="text/css" href="~/Login/css/main.css">
-    <link rel="stylesheet" type="text/css" href="~/css/popup.css">
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">
-    <link rel="stylesheet" type="text/css" href="~/css/servicelist.css">
-    <link rel="stylesheet" type="text/css" href="~/css/photogallery.css">
+    <link rel="stylesheet" href="Index/css/jquery-ui.css" />
+    <link rel="stylesheet" href="Index/css/lightbox.css" type="text/css" media="all" />
+    <link href="Index/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/TextStyle.css">
+    <link rel="stylesheet" type="text/css" href="Login/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/servicelist.css">
+    <link rel="stylesheet" type="text/css" href="css/photogallery.css">
 
     <!-- //js -->
     <!--===JS===========================================================================-->
-    <script src="~/Index/js/jquery-1.11.1.min.js"></script>
-    <script src="~/js/site.js"></script>
-    <script src="~/Login/js/main.js"></script>
-    <script src="~/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Index/js/jquery-1.11.1.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="Login/js/main.js"></script>
+    <script src="Login/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===JS===========================================================================-->
     <!-- Custom Theme files -->
     <!--шрифт-->
     <link href='//fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!--scrolling -->
-    <script type="text/javascript" src="~/Index/js/move-top.js"></script>
-    <script type="text/javascript" src="~/Index/js/easing.js"></script>
+    <script type="text/javascript" src="Index/js/move-top.js"></script>
+    <script type="text/javascript" src="Index/js/easing.js"></script>
 
     <script>
         jQuery(document).ready(function($) {
@@ -54,8 +54,8 @@
             });
         });
     </script>
-    <!-- *@ @*Скроллинг надписи на главной*@ -->
-    <script src="~/Index/js/responsiveslides.min.js"></script>
+    <!-- Скроллинг надписи на главной -->
+    <script src="Index/js/responsiveslides.min.js"></script>
     <script>
         // You can also use "$(window).load(function() {"
         $(function() {
@@ -77,11 +77,11 @@
     </script>
 
 
-    <script type="text/javascript" src="/Index/js/jquery.flexisel.js"></script>*@
+    <script type="text/javascript" src="Index/js/jquery.flexisel.js"></script>*@
 
     <!--анимация для якорей-->
-    <link href="/Index/css/animate.css" rel="stylesheet" type="text/css" media="all">
-    <script src="~/Index/js/wow.min.js"></script>
+    <link href="Index/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="Index/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -119,13 +119,6 @@
                                 <li class="menu__item"><a href="#sale" class="menu__link scroll">Выгодные предложения</a></li>
                                 <li class="menu__item"><a href="#team" class="menu__link scroll">Наша команда</a></li>
                                 <li class="menu__item"><a href="#photo" class="menu__link scroll">Фотогалерея</a></li>
-                                <li class="menu__item"><a href="#contact" class="menu__link scroll">Контакты</a></li>
-                                <li class="menu__item"><a asp-controller="newOrder" asp-action="Online" class="menu__link scroll">Онлайн запись</a></li>
-                                @if (User.Identity.IsAuthenticated) {
-                                <li class="menu__item"><a asp-controller="PersonalOffice" asp-action="Index">Личный кабинет</a></li>
-                                } else {
-                                <li class="menu__item"><a asp-controller="Account" asp-action="Login">Войти</a></li>
-                                }
                             </ul>
                         </nav>
                     </div>
@@ -163,22 +156,21 @@
         </div>
     </div>
 
-    <!-------------------------------------------------------------------->
+    <!--------------------------Услуги------------------------------------------>
     <div id="services">
         <h3 class="title">Услуги в салоне красоты<span></span></h3>
 
         <div class="portfolio-wrap">
             <div class="portfolio-item">
                 <div class="portfolio-item-wrap">
-                    <img src="~/images/bg-01.jpg">
+                    <img src="images/bg-01.jpg">
                     <div class="portfolio-item-inner">
                         <div class="portfolio-heading">
                             <h3>Парикмахерские услуги</h3>
                         </div>
                         <ul>
-                            @foreach (var service in ViewBag.Services1) {
-                            <li>@service</li>
-                            }
+
+
                         </ul>
                     </div>
                 </div>
@@ -186,13 +178,14 @@
 
             <div class="portfolio-item">
                 <div class="portfolio-item-wrap">
-                    <img src="/images/bg-01.jpg">
+                    <img src="images/bg-01.jpg">
                     <div class="portfolio-item-inner">
                         <div class="portfolio-heading">
                             <h3>Прически</h3>
                         </div>
                         <ul>
 
+
                         </ul>
                     </div>
                 </div>
@@ -200,12 +193,13 @@
 
             <div class="portfolio-item">
                 <div class="portfolio-item-wrap">
-                    <img src="~/images/bg-01.jpg">
+                    <img src="images/bg-01.jpg">
                     <div class="portfolio-item-inner">
                         <div class="portfolio-heading">
                             <h3>Ногтевой сервис</h3>
                         </div>
                         <ul>
+
 
                         </ul>
                     </div>
@@ -214,7 +208,7 @@
         </div>
     </div>
 
-    <!-- our prices -->
+    <!------------------------------Комплексные предложения-------------->
     <div id="sale" class="prices all_pad agile wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
         <div class="container">
             <h3 class="title">Комплексные предложения<span></span></h3>
@@ -232,9 +226,6 @@
                                 <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Долговременная укладка</li>
                             </ul>
                             <p>50 BYN</p>
-                            <div class="price-book">
-                                <a asp-controller="newOrder" asp-action="Combo" class="play-icon popup-with-zoom-anim">Записаться</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,9 +242,7 @@
                                 <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Свадебный макияж</li>
                             </ul>
                             <p>210 BYN</p>
-                            <div class="price-book">
-                                <a asp-controller="newOrder" asp-action="Combo" class="play-icon popup-with-zoom-anim">Записаться</a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -270,9 +259,7 @@
                                 <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> СПА-уход стоп</li>
                             </ul>
                             <p>90 BYN</p>
-                            <div class="price-book">
-                                <a asp-controller="newOrder" asp-action="Combo" class="play-icon popup-with-zoom-anim">Записаться</a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -296,7 +283,7 @@
 
                         </div>
                         <div class="t-img">
-                            <img src="/Index/images/t1.jpg" alt=" " />
+                            <img src="Index/images/t1.jpg" alt=" " />
                         </div>
                     </div>
                 </div>
@@ -311,7 +298,7 @@
 
                         </div>
                         <div class="t-img">
-                            <img src="/Index/images/t2.jpg" alt=" " />
+                            <img src="Index/images/t2.jpg" alt=" " />
                         </div>
                     </div>
                 </div>
@@ -326,7 +313,7 @@
 
                         </div>
                         <div class="t-img">
-                            <img src="/Index/images/t3.jpg" alt=" " />
+                            <img src="Index/images/t3.jpg" alt=" " />
                         </div>
                     </div>
                 </div>
@@ -341,7 +328,7 @@
 
                         </div>
                         <div class="t-img">
-                            <img src="/Index/images/t4.jpg" alt=" " />
+                            <img src="Index/images/t4.jpg" alt=" " />
                         </div>
                     </div>
                 </div>
@@ -359,77 +346,77 @@
                 <!--отображение картинок-->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 13</div>
-                    <img src="~/images/1.jpg" style="width:100%">
+                    <img src="images/1.jpg" style="width:100%">
                     <div class="text">Нижний фактурный пучок</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 13</div>
-                    <img src="~/images/02.jpg" style="width:100%">
+                    <img src="images/02.jpg" style="width:100%">
                     <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 13</div>
-                    <img src="~/images/2.jpg" style="width:100%">
+                    <img src="images/2.jpg" style="width:100%">
                     <div class="text">Фактурный пучок для невесты</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 13</div>
-                    <img src="~/images/3.jpg" style="width:100%">
+                    <img src="images/3.jpg" style="width:100%">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 13</div>
-                    <img src="~/images/4.jpg" style="width:100%">
+                    <img src="images/4.jpg" style="width:100%">
                     <div class="text">Гладкий низкий пучок</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">6 / 13</div>
-                    <img src="~/images/05.jpg" style="width:100%">
+                    <img src="images/05.jpg" style="width:100%">
                     <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">7 / 13</div>
-                    <img src="~/images/5.jpg" style="width:100%">
+                    <img src="images/5.jpg" style="width:100%">
                     <div class="text">Фактурный высокий хвост</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">8 / 13</div>
-                    <img src="~/images/6.jpg" style="width:100%">
+                    <img src="images/6.jpg" style="width:100%">
                     <div class="text">Свадебная прическа</div>
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">9 / 13</div>
-                    <img src="~/images/7.jpg" style="width:100%">
+                    <img src="images/7.jpg" style="width:100%">
                     <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">10 / 13</div>
-                    <img src="~/images/8.jpg" style="width:100%">
+                    <img src="images/8.jpg" style="width:100%">
                     <div class="text">Низкий пучок в стиле рустик</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">11 / 13</div>
-                    <img src="~/images/9.jpg" style="width:100%">
+                    <img src="images/9.jpg" style="width:100%">
                     <div class="text">Фактурный высокий хвост с элементами косоплетения</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">12 / 13</div>
-                    <img src="~/images/10.jpg" style="width:100%">
+                    <img src="images/10.jpg" style="width:100%">
                     <div class="text">Греческая коса</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">13 / 13</div>
-                    <img src="~/images/11.jpg" style="width:100%">
+                    <img src="images/11.jpg" style="width:100%">
                     <div class="text"></div>
                 </div>
 
@@ -490,49 +477,12 @@
         }
     </script>
 
-    <!--Контакты-->
-    <div id="contact" class="contact all_pad w3agile  fadeInUp" data-wow-delay=".5s">
-        <div class="container">
-            <h3 class="title">Контакты<span></span></h3>
 
-            <div class="col-md-7 contact-left">
-                <h4>Обратная связь</h4>
-                <form asp-action="SendMessage" method="post">
-                    <div class="form-left">
-                        <input type="text" value="Имя" name="Name" onfocus="this.value='';" placeholder="Имя" required>
-                    </div>
-                    <div class="form-right">
-                        <input type="email" name="Emailsend" placeholder="Email">
-                    </div>
-                    <div class="clearfix"></div>
-                    <textarea name="Message" onfocus="this.value = '';" placeholder="Текст сообщения" required></textarea>
-                    <input type="submit" value="Отправить">
-                </form>
-
-            </div>
-            <div class="col-md-5 contact-right">
-
-                <div class="map-grid">
-                    <h6>Свяжитесь с нами</h6>
-                </div>
-                <div class="map-grid">
-                    <h5>Beauty Center Nika</h5>
-                    <p>Телефон : +375(29)650-17-72</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-            <p style="font-family: inherit;" class="copy-right agileinfo">
-                &copy; 2020 Beauty Center Nika <br /> Developer: Ushakova Nika, group 03 | BSU
-            </p>
-        </div>
-    </div>
-
+    <!----------------upper picture------to navbar-->
     <a href="#bs-example-navbar-collapse-1" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    @*//smooth scrolling*@
     <a href="#nav" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    <script src="/Index/js/bootstrap.js"></script>
-    @*//for bootstrap working*@
+    <script src="Index/js/bootstrap.js"></script>
+
 </body>
 
 </html>

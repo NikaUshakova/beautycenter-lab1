@@ -1,0 +1,133 @@
+h3.title {
+    font-size: 50px;
+    color: #08538c;
+    text-align: center;
+    text-transform: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gabriela', serif;
+}
+
+h3.title-popup {
+    color: #08538c;
+    font-size: 50px;
+    text-align: center;
+    text-transform: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gabriela', serif;
+}
+
+h3.title span {
+    display: block;
+    border: 2px solid #ccc;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin: .3em auto 0em;
+    position: relative;
+}
+
+h3.title span:after {
+    content: ' ';
+    width: 72px;
+    height: 2px;
+    left: 251%;
+    background: #ccc;
+    position: absolute;
+    top: 45%;
+}
+
+h3.title span:before {
+    content: ' ';
+    width: 72px;
+    height: 2px;
+    right: 251%;
+    background: #ccc;
+    position: absolute;
+    top: 45%;
+}
+
+h3.text {
+    color: #08538c;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+input.border {
+    position: relative;
+    right: -355px;
+    width: 175px;
+    font-weight: 500;
+    color: #000000;
+    border-radius: 8px;
+}
+
+input.button {
+    background: #4CAF50;
+    font-size: 16px;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media (max-width: 480px) {
+    h3.title {
+        font-size: 38px;
+        color: #08538c;
+        text-align: center;
+        text-transform: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        font-family: 'Gabriela', serif;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    h3.title {
+        font-size: 32px;
+        color: #08538c;
+        text-align: center;
+        text-transform: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        font-family: 'Gabriela', serif;
+    }
+}
+
+@media screen and (max-width: 312px) {
+    h3.title {
+        font-size: 26px;
+        color: #08538c;
+        text-align: center;
+        text-transform: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        font-family: 'Gabriela', serif;
+    }
+}
+
+@media screen and (max-width: 248px) {
+    h3.title {
+        font-size: 18px;
+        color: #08538c;
+        text-align: center;
+        text-transform: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        font-family: 'Gabriela', serif;
+    }
+}

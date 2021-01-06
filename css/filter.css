@@ -1,0 +1,69 @@
+div.modalFilter {
+    width: 100%;
+    /*float: left;*/
+    outline: 1px solid #666;
+    display: none;
+}
+
+div.filter {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+select {
+    width: auto;
+    padding: 6px 15px;
+    margin: 2px 0 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+label {
+    /*display: block;*/
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: bold;
+}
+
+h3.title {
+    font-size: 50px;
+    color: #08538c;
+    text-align: center;
+    text-transform: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gabriela', serif;
+}
+
+button.OK {
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 20px;
+    margin: 8px 20px;
+    border: none;
+    cursor: pointer;
+    width: 191px;
+    font-size: 16px;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+button.OK:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 576px) {
+    select {
+        width: 100%;
+        padding: 6px 15px;
+        margin: 2px 0 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 13px;
+    }
+}

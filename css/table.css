@@ -1,0 +1,48 @@
+table {
+    border-collapse: collapse;
+    line-height: 1.1;
+    font-family: "Gabriela", sans-serif;
+    /* background: radial-gradient(farthest-corner at 50% 50%, white, rgb(242, 255, 242)); */
+    color: #0C213B;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 90%;
+    /*float: right;*/
+}
+
+caption {
+    font-family: "Gabriela", sans-serif;
+    font-size: 2em;
+    float: left;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+}
+
+
+/* caption:before,
+caption:after {
+    content: "\274B";
+    color: #A9E2CC;
+    margin: 0 10px;
+} */
+
+tr {
+    padding: 10px;
+    border-bottom: 2px solid rgb(150, 150, 150);
+}
+
+th {
+    font-size: 18px;
+    padding: 5px 25px 15px 25px;
+    /*  border-right: 2px solid rgb(150, 150, 150);*/
+}
+
+td {
+    font-size: 16px;
+    padding: 10px 12px;
+    /* border: 2px solid rgb(150, 150, 150);*/
+}
+
+
+/*@media screen and (max)*/
